@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿CREATE DATABASE ApiImport
 
-namespace ApiExample.Importer
-{
-	class CreateDB
-	{
-	}
-}
+USE ApiImport
+
+CREATE TABLE Listing
+(
+	Guid NVARCHAR(50),
+	Longitude NVARCHAR(50),
+	Latitude NVARCHAR(50),
+	Summary NVARCHAR(MAX)
+)
